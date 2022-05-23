@@ -83,5 +83,12 @@ El Arduino se convierte en un nodo publisher el cual se inicia ejecutando un com
 
 Más información: http://wiki.ros.org/rosserial_arduino/Tutorials/Arduino%20IDE%20Setup
 
-### 2. Compilar el 
+### 2. Compilar el sketch de arduino el cual se encuentra en TEST/sketch_mar28a
 
+NOTA: Revisar el código de Arduino para conectar de manera adecuada las entradas.
+
+### 3. Ejecutar el nodo serial del Arduino
+
+`rosrun rosserial_python serial_node.py /dev/ttyUSB0`
+
+NOTA: ttyUSB0 es el puerto en el cuál les aparece conectado su arduino, si no les funciona deben revisar los permisos del puerto en el cuál tienen conectado su dispositivo (como en el proyecto anterior)
