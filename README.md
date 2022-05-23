@@ -1,10 +1,12 @@
 # ROS_NODES
-Adquisición de datos Arduino - ROS
-Usando la interfaz de Arduino, se crea un nodo publisher que publica 3 valores (bool, int, float) medidos en los sensores.
-Los datos son adquiridos cada uno individualmente por 3 nodos subscriber quienes se encargan de transformar estos datos en string
+Este es un compendio de paquetes implementados en ros los cuales hay algunas utilidades tales como el uso del robot turtlebot (arbotix), reconocimiento de objetos, un mini proyecto de conexcion entre arduino y una serie de nodos y un paquete de reproducción de audio
 
-NOTA: Los datos representan entidades físicas, tales como la temperatura, la velocidad y el estado (Encencido - apagado)
+#Paso 1: Clonar el proyecto
 
-Durante el proceso, los datos adquiridos se traducen al inglés por medio de 3 nodos que cumplen el papel de subscriptor y publicador
+Para poder implementar esta serie de proyectos, es necesario clonar el proyecto en nuestro Work Space; 
+NOTA: Si desea concer mayor información de como crear un espacio de trabajo (WorkSpace) le recomendamos visitar: http://wiki.ros.org/catkin/Tutorials/create_a_workspace
 
-El resultado final se entrega a un último nodo el cual cumple el papel de receptor (suscriptor) quien adjunta estos 3 datos ya traducidos y los une para así mostrarlo al usuario
+# turtle_bot
+
+Para la implementación de este paquete, es 
+
