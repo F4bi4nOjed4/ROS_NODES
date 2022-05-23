@@ -119,7 +119,7 @@ Este fue un ejemplo básico pero consistente de cómo se pueden implementar una 
 
 En la práctica, el uso de nodos que compartan información entre ellos es esencial ya que cada uno se puede encargar de diferentes tareas y así tener grandes proyectos seccionados en pequeñas partes que se encargan de tareas específicas, las cuales en conjunto conforman el resultado.
 
-# Paquete de reproducción de audio
+# 3. Paquete de reproducción de audio
 
 Este paquete es una pequeña muestra de como podemos implementar salidas de audio en nuestro ordenador a partir de cadenas de téxto ingresadas por el usuario. Se puede utilizar en infinidad de proyectos que requieran una salida de audio ya que simplemente ingresando una cadena de texto se puede escuchar a través del reproductor lo que dice.
 
