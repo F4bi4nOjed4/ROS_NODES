@@ -1,29 +1,29 @@
 # ROS_NODES
 Este es un compendio de paquetes implementados en ros los cuales hay algunas utilidades tales como el uso del robot turtlebot iRobot (arbotix), un mini proyecto de conexión entre arduino y una serie de nodos y un paquete de reproducción de audio
 
-**#Paso 1:** Clonar el proyecto:
+## **Paso 1:** Clonar el proyecto:
 
 Para poder implementar esta serie de paquetes, es necesario clonar el proyecto en nuestro Work Space; sobre la ruta del espacio de trabajo, dentro de la carpeta /src ejecutar:
 
 `git clone https://github.com/F4bi4nOjed4/ROS_NODES.git;`
 
-##NOTA: Si desea concer mayor información de como crear un espacio de trabajo (WorkSpace) le recomendamos visitar: http://wiki.ros.org/catkin/Tutorials/create_a_workspace
+**NOTA:** Si desea concer mayor información de como crear un espacio de trabajo (WorkSpace) le recomendamos visitar: http://wiki.ros.org/catkin/Tutorials/create_a_workspace
 
-**#Paso 2:** Compilar el proyecto:
+## **Paso 2:** Compilar el proyecto:
 
 Para compilar el proyecto, sobre la carpeta del WorkSpace ejecutar:
 
 `catkin_make`
 
-#Paso 3: Inicializar ROS:
+## **Paso 3:** Inicializar ROS:
 
 Para ejecutar estos paquetes es necesario inicializar ROS utilizando:
 
 `roscore`
 
-# 1. Paquete de ejecución del turtlebot (iRobot):
+# 1. Paquete del turtlebot (iRobot):
 
-Este proyecto se implementa de dos maneras, la primera es la simulación y la segunda es utilizando el robot iRobot real manejado por comandos
+Este proyecto consiste en la implementación del robot iRobot tanto por simulación como también usando el robot real en caso de que tuviéramos uno. Se implementan ambas formas, la primera es la simulación y la segunda es utilizando el robot iRobot real manejado por comandos
 
 Aquí un video guía del proceso: https://www.youtube.com/watch?v=alkwRIfigcc&ab_channel=FabianOjeda
 
