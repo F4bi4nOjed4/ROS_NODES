@@ -109,3 +109,41 @@ NOTA: ttyUSB0 es el puerto en el cuál les aparece conectado su arduino, si no l
 
 `rosrun beginner_tutorials FINAL.py`
 
+### 7.Visualizar el resultado
+
+`rqt_graph`
+
+## Conclusiones
+
+Este fue un ejemplo básico pero consistente de cómo se pueden implementar una serie de nodos que pueden tanto recibir como enviar datos (publisher y subscriber) de forma sencilla. De la misma manera, el uso de Arduino abre un mundo de posibilidades a la hora de hacer uso de entradas y salidas ya que podemos realizar adquisición, tratamiento y así generar respuestas a partir de los requerimientos.
+
+En la práctica, el uso de nodos que compartan información entre ellos es esencial ya que cada uno se puede encargar de diferentes tareas y así tener grandes proyectos seccionados en pequeñas partes que se encargan de tareas específicas, las cuales en conjunto conforman el resultado.
+
+# Paquete de reproducción de audio
+
+Este paquete es una pequeña muestra de como podemos implementar salidas de audio en nuestro ordenador a partir de cadenas de téxto ingresadas por el usuario. Se puede utilizar en infinidad de proyectos que requieran una salida de audio ya que simplemente ingresando una cadena de texto se puede escuchar a través del reproductor lo que dice.
+
+Para mayor información sobre los paquetes puedes visitar el enlace: http://wiki.ros.org/audio_common
+
+## Ejemplo simple de reproducción ingresando una cadena:
+
+### 1. Ejecución del paquete soundplay
+
+Para ejecutar el núcleo que nos permite implementar salidas de audio, lo primero es irnos a la ruta:` /audio_common/sound_play/scripts/ `
+
+Ejecutar:
+
+`python soundplay_node.py`
+
+### 2. Ingresar cadenas de texto:
+
+`rosrun sound_play say.py 'lo que desees escuchar'`
+
+### 3. Hacer un test:
+
+`rosrun sound_play test.py`
+
+## Conclusiones
+
+Esta fue una pequeña muestra de la implementación de un paquete de audio de ros, no obstante, entre sus aplicaciones es importante mencionar el transporte de paquetes de audio entre nodos y la interacción por comandos ingresados por voz.
+
