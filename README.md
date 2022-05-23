@@ -3,8 +3,12 @@ Este es un compendio de paquetes implementados en ros los cuales hay algunas uti
 
 #Paso 1: Clonar el proyecto
 
-Para poder implementar esta serie de paquetes, es necesario clonar el proyecto en nuestro Work Space; 
+Para poder implementar esta serie de paquetes, es necesario clonar el proyecto en nuestro Work Space (sobre la ruta del espacio de trabajo, dentro de la carpeta /src ejecutar git clone  ; 
 ##NOTA: Si desea concer mayor información de como crear un espacio de trabajo (WorkSpace) le recomendamos visitar: http://wiki.ros.org/catkin/Tutorials/create_a_workspace
+
+#Paso 2: Compilar el proyecto
+
+Para co
 
 # turtle_bot
 
