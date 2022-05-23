@@ -92,3 +92,20 @@ NOTA: Revisar el código de Arduino para conectar de manera adecuada las entrada
 `rosrun rosserial_python serial_node.py /dev/ttyUSB0`
 
 NOTA: ttyUSB0 es el puerto en el cuál les aparece conectado su arduino, si no les funciona deben revisar los permisos del puerto en el cuál tienen conectado su dispositivo (como en el proyecto anterior)
+
+### 4.Ejecutar los tres primeros nodos receptores:
+
+`rosrun beginner_tutorials R1_Boleano.py`
+`rosrun beginner_tutorials R2_Entero.py`
+`rosrun beginner_tutorials R3_Flotante.py`
+
+### 5.Ejecutar los tres nodos secundarios:
+
+`rosrun beginner_tutorials R4_Boleano.py`
+`rosrun beginner_tutorials R5_Entero.py`
+`rosrun beginner_tutorials R6_Flotante.py`
+
+### 6.Ejecutar el nodo final:
+
+`rosrun beginner_tutorials FINAL.py`
+
