@@ -70,7 +70,9 @@ NOTA: El robot se opera con las teclas de dirección (Arriba, Abajo, Izquierda, 
 
 # 2. Proyecto de conexción entre Arduino y ROS
 
-Para este proyecto es necesario contar con un Arduino y con los paquetes de ejecución de forma serial para la conexión entre ROS y Arduino (rosserial) 
+Para este proyecto es necesario contar con un Arduino y con los paquetes de ejecución de forma serial para la conexión entre ROS y Arduino (rosserial); es importante mencionar que el proyecto consiste en el envío de 3 tipos de datos desde el arduino los cuales son tomados desde sus entradas (un boleano, un entero y un flotante)
+
+El Arduino se convierte en un nodo publisher el cual se inicia ejecutando un comando incluído en la librería "rosserial"; este a su vez, crea 3 topics que son los que envían cada uno por separado los tres datos, los cuales son recibidos por 3 nodos diferentes, quienes procesan los datos y los transforman a un valor del tipo string, y que hacen el papel de publisher y subscriber; por último, estos nodos envían los datos transformados a otros 3 nodos quienes traducen la información recibida y la envían hacia un nodo resultante (FINAL) quien es el encargado de unir los 3 datos en uno solo.
 
 ### 1. Instalar rosserial:
 
