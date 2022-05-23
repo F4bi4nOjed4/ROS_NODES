@@ -74,12 +74,14 @@ Para este proyecto es necesario contar con un Arduino y con los paquetes de ejec
 
 El Arduino se convierte en un nodo publisher el cual se inicia ejecutando un comando incluído en la librería "rosserial"; este a su vez, crea 3 topics que son los que envían cada uno por separado los tres datos, los cuales son recibidos por 3 nodos diferentes, quienes procesan los datos y los transforman a un valor del tipo string, y que hacen el papel de publisher y subscriber; por último, estos nodos envían los datos transformados a otros 3 nodos quienes traducen la información recibida y la envían hacia un nodo resultante (FINAL) quien es el encargado de unir los 3 datos en uno solo.
 
-/ROS_NODES/NODOS.jpg
+## RESULTADO
+
+![Image text](https://github.com/F4bi4nOjed4/ROS_NODES/blob/main/NODOS.jpg)
 
 
 ### 1. Instalar rosserial:
 
 Más información: http://wiki.ros.org/rosserial_arduino/Tutorials/Arduino%20IDE%20Setup
 
-### 2. 
+### 2. Compilar el 
 
