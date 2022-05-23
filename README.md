@@ -147,3 +147,14 @@ Ejecutar:
 
 Esta fue una pequeña muestra de la implementación de un paquete de audio de ros, no obstante, entre sus aplicaciones es importante mencionar el transporte de paquetes de audio entre nodos y la interacción por comandos ingresados por voz.
 
+
+
+
+
+
+
+
+
+Espero sea de ayuda este humilde repositorio :) 
+
+F4O
