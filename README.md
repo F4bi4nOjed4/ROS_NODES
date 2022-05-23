@@ -1,5 +1,5 @@
 # ROS_NODES
-Este es un compendio de paquetes implementados en ros los cuales hay algunas utilidades tales como el uso del robot turtlebot iRobot (arbotix), un mini proyecto de conexión entre arduino y una serie de nodos y un paquete de reproducción de audio
+Este repositorio es un pequeño compendio de paquetes implementados en ros en los cuales hay algunas utilidades tales como el uso del robot turtlebot iRobot (arbotix), un mini proyecto de conexión entre arduino y una serie de nodos y un paquete de reproducción de audio
 
 ## **Paso 1:** Clonar el proyecto:
 
