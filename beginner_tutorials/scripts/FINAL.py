@@ -24,7 +24,6 @@ def callback2(data):
 def listener():
 
     rospy.init_node('FINAL', anonymous=False)
-
     rospy.Subscriber('BOLEANO2', String, callback)
     rospy.Subscriber('ENTERO2', String, callback1)
     rospy.Subscriber('FLOTANTE2', String, callback2)
