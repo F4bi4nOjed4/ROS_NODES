@@ -145,7 +145,7 @@ Ejecutar:
 
 ## Conclusiones
 
-Esta fue una pequeña muestra de la implementación de un paquete de audio de ros, no obstante, entre sus aplicaciones es importante mencionar el transporte de paquetes de audio entre nodos y la interacción por comandos ingresados por voz.
+Esta fue una pequeña muestra de la implementación de un paquete de audio de ros, no obstante, entre sus aplicaciones es importante mencionar el transporte de paquetes de audio entre nodos y la interacción por comandos ingresados por voz ya que estos abren la puerta a un gran numero de posibles aplicaciones.
 
 # 4. Proyecto de tracking a objetos circulares con servo motores
 
