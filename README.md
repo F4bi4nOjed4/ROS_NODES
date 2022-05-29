@@ -165,6 +165,9 @@ NOTA: Este comando nos genera un topic al cual nos podemos subscribir que se den
 
 NOTA: Este script permite reconocer circulos y enviar informacion sobre el punto en el cual se encuentra el objeto circular, generando dos topics que envian la coordenada X y Y
 
+Hay otros scrips que tienen diferentes funciones tales como el cambio de imagen a gris o el cambio de contraste, y los podemos ejecutar cambiando el nombre del archivo en el ultimo comando 
+Ejemplo: `rosrun opencv_example opencv_change_contrast_hh`
+
 ## 3. Ejecutar el sketch de Arduino:
 
 El sketch lo podemos encontrar en la carpeta "servos" la cual contiene el codigo que permite a partir de la coordenada en X y Y centrar la camara con el movimiento de los servos.
@@ -173,7 +176,7 @@ El sketch lo podemos encontrar en la carpeta "servos" la cual contiene el codigo
 
 NOTA: El ultimo comando enlaza el puerto serial del arduino y lo convierte en un nodo ejecutable de ros, el cual puede tanto publicar y subscribirse a demas nodos.
 
-
+Video: https://www.youtube.com/shorts/uncC3gxmFqo
 
 Espero sea de ayuda este humilde repositorio :) 
 
