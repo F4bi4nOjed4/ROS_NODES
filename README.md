@@ -1,5 +1,5 @@
 # ROS_NODES
-Este repositorio es un pequeño compendio de paquetes implementados en ros en los cuales hay algunas utilidades tales como el uso del robot turtlebot iRobot (arbotix), un mini proyecto de conexión entre arduino y una serie de nodos y un paquete de reproducción de audio
+Este repositorio es un pequeño compendio de paquetes implementados en ros en los cuales hay algunas utilidades tales como el uso del robot turtlebot iRobot (arbotix), un mini proyecto de conexión entre arduino y una serie de nodos, un paquete de reproducción de audio y un miniproyecto implementando una camara usb para hacer tracking a objetos.
 
 ## **Paso 1:** Clonar el proyecto:
 
@@ -147,11 +147,31 @@ Ejecutar:
 
 Esta fue una pequeña muestra de la implementación de un paquete de audio de ros, no obstante, entre sus aplicaciones es importante mencionar el transporte de paquetes de audio entre nodos y la interacción por comandos ingresados por voz.
 
+# 4. Proyecto de tracking a objetos circulares con servo motores
 
+Inicialmente debemos instalar el paquete de la camara usb, para esto, ejecutamos el siguiente comando:
 
+`sudo apt-get install ros-kinetic-usb-cam`
 
+## 1. Lanzar la camara:
 
+`roslaunch usb_cam usb_cam-test.launch`
 
+NOTA: Este comando nos genera un topic al cual nos podemos subscribir que se denomina "/usb_cam/image_raw"
+
+## 2. Ejecutar script de reconocimiento:
+
+`rosrun opencv_example opencv_houghCircleTransform_hh`
+
+NOTA: Este script permite reconocer circulos y enviar informacion sobre el punto en el cual se encuentra el objeto circular, generando dos topics que envian la coordenada X y Y
+
+## 3. Ejecutar el sketch de Arduino:
+
+El sketch lo podemos encontrar en la carpeta "servos" la cual contiene el codigo que permite a partir de la coordenada en X y Y centrar la camara con el movimiento de los servos.
+
+`rosrun rosserial_python serial_node.py /dev/ttyUSB0`
+
+NOTA: El ultimo comando enlaza el puerto serial del arduino y lo convierte en un nodo ejecutable de ros, el cual puede tanto publicar y subscribirse a demas nodos.
 
 
 
