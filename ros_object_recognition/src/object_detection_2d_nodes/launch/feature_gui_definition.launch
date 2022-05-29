@@ -1,0 +1,9 @@
+<launch>
+	<node name="feature_gui_definition"
+		pkg="object_detection_2d_nodes"
+		type="feature_definition"
+		output="screen">
+		<remap from="input_image" to="camera/rgb/image_raw"/>
+	</node>
+	<include file="$(find astra_launch)/launch/astra.launch"/>
+</launch>

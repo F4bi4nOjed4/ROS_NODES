@@ -1,0 +1,49 @@
+!! NOTE !!
+==========
+This project is deprecated.
+I've created this project in 2017 for my master thesis. Since then, no signifiant changes have been made.
+Since I'm not working with ROS anymore, I will probably not be able to answer your questions.
+Feel free to use the code and concepts as building blocks or as an inspiration for your own project.
+Don't expect this project to run by "plug and play" or to even compile with current versions of ROS.
+
+
+Summary
+=======
+A simple "framework" for ROS-based 2D and 3D object recognition software.
+
+Documentation
+=============
+You find a description of the project in docs/project_description.pdf.
+docs/thesis.pdf contains a more detailed description but it's not up-to-date
+anymore.
+The following video provides an overview and demonstrations:
+https://www.youtube.com/watch?v=Pmur4kxrexE
+
+Requirements
+============
+ROS
+OpenCV 3 (only for 2D object recognition)
+PCL 1.7  (only for 3D object recognition)
+Eigen 3  (only for 3D object recognition)
+Qt5 (not necessary if you do not compile the GUI-files)
+
+Compilation
+===========
+1. Follow ROS installation (Desktop Full Install): http://wiki.ros.org/kinetic/Installation/Ubuntu
+	I needed to enable mysql (sudo systemctl enable mysql) for this to work.
+2. Create catkin workspace:
+	mkdir -p ~/catkin_ws/src
+	cd ~/catkin_ws
+	catkin_make
+3. Clone project:
+	cd ~
+	git clone https://github.com/joffman/ros_object_recognition.git
+4. Copy/Move src folder into your workspace.
+	cp -r ~/ros_object_recognition/src/* ~/catkin_ws/src/
+5. Compile:
+	cd ~/catkin_ws
+	catkin_make
+
+License
+=======
+MIT license
