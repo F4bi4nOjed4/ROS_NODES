@@ -178,6 +178,8 @@ NOTA: El ultimo comando enlaza el puerto serial del arduino y lo convierte en un
 
 Video: https://www.youtube.com/shorts/uncC3gxmFqo
 
-Espero sea de ayuda este humilde repositorio :) 
+Este pequeño repositorio fue realizado con colaboración del ingeniero @herohernan.
+
+Espero sea de ayuda :) 
 
 F4O
